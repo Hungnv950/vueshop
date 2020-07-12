@@ -1,9 +1,10 @@
 <template>
   <div id="app">
+
     <Navigation></Navigation>
-    <b-container>
+    <div class="container">
       <router-view/>
-    </b-container>
+    </div>
     <footer class="py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright © Your Website 2020</p>

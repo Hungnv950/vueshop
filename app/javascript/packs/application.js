@@ -1,16 +1,17 @@
-import Vue from 'vue'
-import App from '../app.vue'
-import router from '../src/router'
+import 'jquery/src/jquery.js';
+import 'popper.js/dist/popper.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import {
   BootstrapVue,
   IconsPlugin
-} from 'bootstrap-vue';
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+} from 'bootstrap-vue'
+import Vue from 'vue'
+import App from '../app.vue'
+import router from '../src/router'
 
-// Install BootstrapVue
 Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
 document.addEventListener('DOMContentLoaded', () => {
