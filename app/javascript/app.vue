@@ -1,8 +1,14 @@
 <template>
   <div id="app">
     <Navigation></Navigation>
-    <br>
-    <router-view/>
+    <b-container>
+      <router-view/>
+    </b-container>
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright © Your Website 2020</p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -13,10 +19,17 @@
     name: 'app',
     components: {
       'Navigation': Navigation
+    },
+    data(){
+      return {
+        name: "Hung dep trai"
+      }
     }
   }
 </script>
 
-<style scoped>
-
+<style>
+  body {
+    padding-top: 56px;
+  }
 </style>
