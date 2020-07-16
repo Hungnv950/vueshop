@@ -2,27 +2,27 @@
 #
 # Table name: users
 #
-#  id                     :integer          not null, primary key
-#  address                :text
+#  id                     :bigint           not null, primary key
+#  address                :text(65535)
 #  confirmation_sent_at   :datetime
-#  confirmation_token     :string
+#  confirmation_token     :string(255)
 #  confirmed_at           :datetime
 #  current_sign_in_at     :datetime
-#  current_sign_in_ip     :string
-#  email                  :string           default(""), not null
-#  encrypted_password     :string           default(""), not null
+#  current_sign_in_ip     :string(255)
+#  email                  :string(255)      default(""), not null
+#  encrypted_password     :string(255)      default(""), not null
 #  failed_attempts        :integer          default(0), not null
 #  last_sign_in_at        :datetime
-#  last_sign_in_ip        :string
+#  last_sign_in_ip        :string(255)
 #  locked_at              :datetime
-#  phone_number           :string
+#  phone_number           :string(255)
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
-#  reset_password_token   :string
+#  reset_password_token   :string(255)
 #  sign_in_count          :integer          default(0), not null
-#  tax                    :string
-#  unconfirmed_email      :string
-#  unlock_token           :string
+#  tax                    :string(255)
+#  unconfirmed_email      :string(255)
+#  unlock_token           :string(255)
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #

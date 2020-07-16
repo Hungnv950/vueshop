@@ -2,14 +2,14 @@
 #
 # Table name: products
 #
-#  id             :integer          not null, primary key
+#  id             :bigint           not null, primary key
 #  before_price   :integer
 #  count          :integer
-#  description    :string
+#  description    :string(255)
 #  guarantee_date :date
 #  is_hot         :boolean
 #  price          :integer
-#  title          :string
+#  title          :string(255)
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
 #
