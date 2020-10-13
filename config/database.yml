@@ -8,10 +8,14 @@ default: &default
   adapter: mysql2
   encoding: utf8
   database: vueshop
-  username: vueshop
+  username: root
   password: Aa@123123
-  host: vueshop-db
-  # host: 127.0.0.1
+  host: 127.0.0.1
+  # database: vueshop
+  # username: vueshop
+  # password: Aa@123123
+  # host: vueshop-db
+  # # host: 127.0.0.1
   port: 3306
   flags:
     - -COMPRESS

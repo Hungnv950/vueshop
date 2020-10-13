@@ -1,8 +1,8 @@
 class CreatePhotos < ActiveRecord::Migration[5.2]
   def change
     create_table :photos do |t|
-      t.references :users
-      t.references :products
+      t.references :user
+      t.references :product
       t.string :subject
       t.string :large_url
       t.string :medium_url

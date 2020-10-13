@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_12_145708) do
+ActiveRecord::Schema.define(version: 2020_09_08_140641) do
 
   create_table "photos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "users_id"
-    t.bigint "products_id"
+    t.bigint "user_id"
+    t.bigint "product_id"
     t.string "subject"
     t.string "large_url"
     t.string "medium_url"
@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 2020_07_12_145708) do
     t.integer "type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["products_id"], name: "index_photos_on_products_id"
-    t.index ["users_id"], name: "index_photos_on_users_id"
+    t.index ["product_id"], name: "index_photos_on_product_id"
+    t.index ["user_id"], name: "index_photos_on_user_id"
   end
 
   create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 2020_07_12_145708) do
     t.datetime "locked_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "avatar"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

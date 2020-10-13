@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from '../components/pages/Home'
 import About from '../components/pages/About'
 import Contact from '../components/pages/Contact'
+import Upload from '../components/pages/Upload'
+import Profile from '../components/pages/Profile'
 
 Vue.use(Router)
 
@@ -21,6 +23,16 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/upload',
+      name: 'Upload',
+      component: Upload
+    },
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile
     }
   ],
   mode: 'history'

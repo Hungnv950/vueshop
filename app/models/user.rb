@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: users
 #
 #  id                     :bigint           not null, primary key
 #  address                :text(65535)
+#  avatar                 :string(255)
 #  confirmation_sent_at   :datetime
 #  confirmation_token     :string(255)
 #  confirmed_at           :datetime
@@ -36,4 +39,6 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  mount_uploader :avatar, AvatarUploader
 end
