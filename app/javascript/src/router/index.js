@@ -5,6 +5,7 @@ import About from '../components/pages/About'
 import Contact from '../components/pages/Contact'
 import Upload from '../components/pages/Upload'
 import Profile from '../components/pages/Profile'
+import Product from '../components/Product'
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ export default new Router({
       path: '/profile',
       name: 'Profile',
       component: Profile
+    },
+    {
+      path: '/products/:id',
+      name: 'Product',
+      component: Product
     }
   ],
   mode: 'history'

@@ -85,9 +85,13 @@
             v-bind:key="index"
           >
             <div class="card h-100">
-              <a v-bind:href="PRODUCTS_API + product.id"
-                ><img class="card-img-top" :src="product.thumbnail_url" alt=""
-              /></a>
+              <router-link
+                v-bind:key="product.id"
+                :to="`/products/${product.id}`"
+                class="nav-link"
+              >
+                <img class="card-img-top" :src="product.thumbnail_url" alt="" />
+              </router-link>
               <div class="card-body">
                 <h4 class="card-title">
                   <a href="#">{{ product.title }} </a>
