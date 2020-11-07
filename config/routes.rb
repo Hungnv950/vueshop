@@ -10,6 +10,8 @@ Rails.application.routes.draw do
       namespace :user do
         resource :profiles, only: %i[create]
       end
+
+      resources :products
     end
   end
 

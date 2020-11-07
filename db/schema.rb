@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2020_09_08_140641) do
     t.boolean "is_hot"
     t.date "guarantee_date"
     t.integer "count"
+    t.text "thumbnail_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

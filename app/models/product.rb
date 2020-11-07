@@ -9,6 +9,7 @@
 #  guarantee_date :date
 #  is_hot         :boolean
 #  price          :integer
+#  thumbnail_url  :text(65535)
 #  title          :string(255)
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null

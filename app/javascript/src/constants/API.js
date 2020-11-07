@@ -1,2 +1,2 @@
-export const DOMAIN = '/api/v1'
-export const PRODUCTS_API = DOMAIN +'/products'
+export const DOMAIN = '/api/v1/'
+export const PRODUCTS_API = DOMAIN +'products/'

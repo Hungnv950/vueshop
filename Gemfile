@@ -18,7 +18,8 @@ gem 'devise', '~> 4.2'
 gem 'rack-cors'
 gem 'redis', '~> 4.1'
 gem 'carrierwave', '~> 2.0'
-
+gem "mini_magick"
+gem "pagy"
 
 group :development, :test do
   gem 'annotate'

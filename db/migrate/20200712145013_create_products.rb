@@ -8,6 +8,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.boolean :is_hot
       t.date :guarantee_date
       t.integer :count
+      t.text :thumbnail_url
 
       t.timestamps
     end

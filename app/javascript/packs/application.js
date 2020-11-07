@@ -10,7 +10,9 @@ import {
 import Vue from 'vue'
 import App from '../app.vue'
 import router from '../src/router'
+import ScrollLoader from 'vue-scroll-loader'
 
+Vue.use(ScrollLoader)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
