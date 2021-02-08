@@ -17,7 +17,7 @@ gem 'foreman'
 gem 'devise', '~> 4.2'
 gem 'rack-cors'
 gem 'redis', '~> 4.1'
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 gem "mini_magick"
 gem "pagy"
 
